@@ -76,8 +76,10 @@
 	_vue2.default.use(_vueRouter2.default);
 
 	var router = new _vueRouter2.default({
-	    mode: 'history',
+	    /*mode: 'history',*/
 	    // base: baseUrl,
+	    hashbang: true, //路径已#/开头  防止刷新报404
+	    history: true,
 	    routes: [{ path: '/', component: _indexMain2.default }, { path: '/index', component: _indexMain2.default }, { path: '/addUserGroup', component: _addUserGroup2.default }]
 	});
 

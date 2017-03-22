@@ -12,8 +12,10 @@ import addUserGroup from './views/addUserGroup.vue'
 
 
 const router = new VueRouter({
-    mode: 'history',
+    /*mode: 'history',*/
     // base: baseUrl,
+    hashbang:true,//路径已#/开头  防止刷新报404
+    history:true,
     routes: [
         { path: '/', component: Index},
         { path: '/index', component: Index},
