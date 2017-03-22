@@ -1,4 +1,4 @@
-# vue-cli多页面
+# vue-webpack多页面
 
 # install dependencies
 npm install
