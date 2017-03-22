@@ -80,6 +80,7 @@
 	    // base: baseUrl,
 	    hashbang: true, //路径已#/开头  防止刷新报404
 	    history: true,
+	    linkActiveClass: 'active', //当前页的选中状态
 	    routes: [{ path: '/', component: _indexMain2.default }, { path: '/index', component: _indexMain2.default }, { path: '/addUserGroup', component: _addUserGroup2.default }]
 	});
 

@@ -16,6 +16,7 @@ const router = new VueRouter({
     // base: baseUrl,
     hashbang:true,//路径已#/开头  防止刷新报404
     history:true,
+    linkActiveClass:'active',//当前页的选中状态
     routes: [
         { path: '/', component: Index},
         { path: '/index', component: Index},
