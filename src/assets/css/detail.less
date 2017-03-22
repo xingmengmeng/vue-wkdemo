@@ -1,0 +1,434 @@
+.deTail{
+  background: #fff;
+  height: 100%;
+
+  .detailTitle{
+    padding-left: 60px;
+    width: 100%;
+    height: 52px;
+    line-height: 52px;
+    border-bottom: 2px solid #1078F5;
+    box-sizing: border-box;
+    background: url("../images/icon8.png") 20px center no-repeat;
+    h3{
+      font-size: 15px;
+      .creatAct{
+        margin:10px 20px 0 0;
+        width: 110px;
+        height: 30px;
+        line-height: 30px;
+        border: 0;
+        font-size: 14px;
+        font-weight: normal;
+        color: #333;
+        background: #DEECFC;
+        text-align: center;
+        cursor: pointer;
+        &:hover{
+          background: #a9d1fe;
+        }
+      }
+    }
+  }
+  .nextWrap{
+    padding: 15px 10px 0 20px;
+    width: 100%;
+    box-sizing: border-box;
+    background: #fff;
+    margin-bottom: 98px;
+
+    .leftDiv{
+      width: 100%;
+      padding-right: 170px;
+      box-sizing: border-box;
+
+      .con{
+        width: 100%;
+        height: 100%;
+
+        .listH5{
+          margin-bottom: 10px;
+          padding-bottom: 10px;
+          width: 100%;
+          font-size: 16px;
+          font-weight: normal;
+          color: #333333;
+          border-bottom: 2px solid #BDBDBD;
+        }
+
+        .wid48{
+          float: left;
+          width: 55.5%;
+          .groupUl{
+            margin-bottom: 20px;
+            padding: 10px 20px;
+            width: 100%;
+            background: #F7FAFE;
+            border: 1px solid #ECECEC;
+            border-radius: 2px;
+            box-sizing: border-box;
+            li{
+              label{
+                display: inline-block;
+                width: 84px;
+                height: 36px;
+                line-height: 36px;
+              }
+              i{
+                margin-left: 5px;
+                display: inline-block;
+                width: 11px;
+                height: 11px;
+                background: url("../images/edit.png");
+              }
+              .saveBtn{
+                padding: 2px 10px;
+                background: #ebebe4;
+                border: 1px #a9a9a9 solid;
+                font-size: 13px;
+                color: #545454;
+                cursor: pointer;
+              }
+            }
+          }
+          .libray{
+            width: 100%;
+            margin-bottom: 10px;
+            background: #F7FAFE;
+            border: 1px solid #ECECEC;
+            box-sizing: border-box;
+            .labels{
+              width: 100%;
+              height: 40px;
+              line-height: 40px;
+              padding-left: 20px;
+              border-bottom: 2px solid #ACD2FF;
+              box-sizing: border-box;
+            }
+            li{
+              padding: 0 20px;
+              height: 42px;
+              line-height: 42px;
+            }
+          }
+        }
+        .wid37{
+          float: right;
+          width: 43%;
+          .userLabelWrap{
+            background: #F7FAFE;
+            border-radius: 2px;
+            border: 1px solid #ECECEC;
+            .labels{
+              margin-bottom: 20px;
+              width: 100%;
+              border-bottom: 2px solid #ACD2FF;
+              h5{
+                float: left;
+                height: 40px;
+                line-height: 40px;
+                padding-left: 20px;
+                box-sizing: border-box;
+              }
+              .detailsLink{
+                float: right;
+                padding: 12px 15px 0 0;
+                font-size: 12px;
+                color: #333333;
+              }
+            }
+            .messDivGoup{
+              padding: 0 10px 15px 10px;
+              span{
+                float: left;
+                display: block;
+                padding: 3px 20px;
+                margin:0 3px 10px 3px;
+                background: #FFFFFF;
+                border: 1px solid #9BC9FF;
+                border-radius: 57px;
+              }
+            }
+          }
+          .downCsv{
+            margin-top: 20px;
+            background: #F7FAFE;
+            border-radius: 2px;
+            border: 1px solid #ECECEC;
+            .labels{
+              margin-bottom: 20px;
+              width: 100%;
+              border-bottom: 2px solid #ACD2FF;
+              h5{
+                float: left;
+                height: 40px;
+                line-height: 40px;
+                padding-left: 20px;
+                box-sizing: border-box;
+              }
+              .detailsLink{
+                float: right;
+                padding: 12px 15px 0 0;
+                font-size: 12px;
+                color: #333333;
+              }
+            }
+            .logList{
+              padding: 0 10px 15px 10px;
+              li{
+                height: 35px;
+                line-height: 35px;
+                a{
+                  color:#333;
+                  &:hover{
+                    color:#1078f5;
+                    text-decoration: underline;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .rightMenu{
+      width: 150px;
+      ul{
+        width: 100%;
+        border-top: 1px solid #ECECEC;
+        li{
+          width: 100%;
+          height: 44px;
+          line-height: 44px;
+          text-align: center;
+          border-bottom: 1px #ECECEC solid;
+          border-left: 1px #ECECEC solid;
+          border-right: 1px #ECECEC solid;
+          background: #F7FAFE;
+
+          a{
+            color: #999;
+          }
+          &.active{
+            border-left: 0;
+            border-right: 1px #1a7ef5 solid;
+            background: #fff;
+            a{
+              color: #333;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/*弹框遮罩*/
+.markWarp{
+  .markTitle{
+    padding: 0 16px 0 20px;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    background: #F7FAFE;
+    border: 1px solid #DDEDFF;
+    box-sizing: border-box;
+
+    h5{
+      float: left;
+      padding-left: 25px;
+      background: url("../images/mark_icon1.png") left center no-repeat;
+      font-size: 14px;
+      font-weight: normal;
+    }
+    .close{
+      margin-top: 11px;
+      width: 17px;
+      height: 17px;
+      background: url("../images/close.png");
+      cursor: pointer;
+      font-size: 0;
+    }
+  }
+  ul{
+    padding: 30px 24px 0 40px;
+    width: 100%;
+    box-sizing: border-box;
+    li{
+      width: 100%;
+      margin-bottom: 10px;
+      &.saveErrorLi{
+        margin-bottom: 0;
+        span{
+          font-size: 12px;
+          color: rgb(180, 6, 6);
+          padding: 0 0 0 120px;
+        }
+      }
+      label{
+        float: left;
+        width: 120px;
+        height: 28px;
+        line-height: 28px;
+        text-align: right;
+      }
+      .actSpan{
+        float: left;
+        height: 28px;
+        line-height: 28px;
+      }
+      select{
+        width: 266px;
+        height: 28px;
+        line-height: 28px;
+        border: 1px solid #ECECEC;
+        box-sizing: border-box;
+      }
+      .creatNew{
+        float: left;
+        margin-left: 15px;
+        height: 28px;
+        line-height: 28px;
+        color:#1078f5;
+        text-decoration: underline;
+      }
+      strong{
+        color: #f9915a;
+      }
+      .txt{
+        float: left;
+        padding: 0 10px;
+        width: 266px;
+        height: 28px;
+        border: 1px solid #ECECEC;
+        font-size: 13px;
+        box-sizing: border-box;
+      }
+      .countNum{
+        display: inline-block;
+        width: 120px;
+        height: 28px;
+        line-height: 28px;
+        text-align: center;
+        border: 1px solid #ECECEC;
+        box-sizing: border-box;
+      }
+      .curNameSpan{
+        display: inline-block;
+        padding:0 10px;
+        height: 28px;
+        line-height: 28px;
+        border: 1px solid #ECECEC;
+        box-sizing: border-box;
+      }
+      .countBtn{
+        float: left;
+        margin-left: 26px;
+        width: 120px;
+        height: 28px;
+        line-height: 28px;
+        background: #d0e6ff;
+        border: 0;
+        font-size: 13px;
+        color: #333;
+        cursor: pointer;
+      }
+      &.btnWrap{
+        margin: 30px auto 0 auto;
+        width: 190px;
+        input{
+          width: 80px;
+          height: 30px;
+          border: 0;
+          border-radius: 3px;
+          color:#252525;
+          cursor: pointer;
+
+          &:nth-child(1){
+            float: left;;
+          }
+          &:nth-child(2){
+            float: right;
+            color: #fff;
+            background: #1078f5;
+          }
+        }
+      }
+    }
+    &.addUserGroup{
+      padding: 30px 84px 0 65px;
+      width: 100%;
+      box-sizing: border-box;
+      li{
+        width: 100%;
+        height: 28px;
+        label{
+          width: 94px;
+        }
+        strong{
+          color: #f9915a;
+        }
+        .txt{
+          padding: 0 10px;
+          width: 266px;
+          height: 28px;
+          border: 1px solid #ECECEC;
+          font-size: 13px;
+          box-sizing: border-box;
+        }
+        .txtError{
+          .txt;
+          border: 1px solid #f9915a;
+        }
+        &.btnWrap{
+          margin: 10px auto 0 auto;
+          width: 190px;
+          padding: 0;
+          input{
+            width: 80px;
+            height: 30px;
+            border: 0;
+            border-radius: 3px;
+            color:#252525;
+            cursor: pointer;
+
+            &:nth-child(1){
+              float: left;;
+            }
+            &:nth-child(2){
+              float: right;
+              color: #fff;
+              background: #1078f5;
+              &:hover{
+                background: #0a5fc5;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.logScroll{
+  position: relative;
+  padding: 0 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+  .logList{
+    li{
+      height: 40px;
+      line-height: 40px;
+      border-bottom: 1px #ececec solid;
+
+      a{
+        color: #333;
+        &:hover{
+          color:#1078f5;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+

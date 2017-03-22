@@ -1,0 +1,295 @@
+[v-cloak]{
+  display:none;
+}
+body{
+  font-family: '微软雅黑';
+  background: #ececec;
+  font-size: 14px;
+  color:#333;
+}
+input,select{
+  font-family: '微软雅黑';
+  font-size: 13px;
+}
+.container{
+  width: 100%;
+  padding:0 10px;
+  box-sizing: border-box;
+}
+.left{
+  float: left;
+}
+.right{
+  float: right;
+}
+.clearfix:after{
+  content: '';
+  clear: both;
+  display: block;
+}
+
+header{
+  position: relative;
+  z-index: 99;
+  height: 50px;
+  background: #1078F5;
+  color:#fff;
+
+  .logo{
+    width: 80px;
+    height: 21px;
+    background: url(../images/logo.png) no-repeat;
+    font-size: 0;
+    margin-top: 15px;
+  }
+  .logoF{
+    float: left;
+    margin: 12px 0 0 15px;
+    font-size: 20px;
+    color: #FFFFFF;
+  }
+  .nav{
+    margin:0 300px 0 260px;
+    text-align: center;
+    a{
+      display: inline-block;
+      height: 35px;
+      line-height: 35px;
+      padding: 5px 5px 0 5px;
+      margin: 0 20px;
+      opacity: 0.8;
+      font-size: 16px;
+      color: #FFFFFF;
+    }
+    a:hover,a.active{
+      opacity: 1;
+      border-bottom: 1px #fff solid;
+    }
+  }
+  .headRight{
+    margin-top:14px;
+    float: right;
+    .set-mes{
+      float: left;
+      margin-right: 10px;
+      width: 23px;
+      height: 23px;
+      color: #fff;
+      font-size: 0;
+      background: url(../images/set_icon.png);
+    }
+    .ad-center{
+      float: left;
+      .userMess{
+        cursor: pointer;
+        span{
+          float: left;
+          font-size: 16px;
+          color: #FFFFFF;
+        }
+        i{
+          float: left;
+          margin: 10px 0 0 5px;
+          width: 13px;
+          height: 6px;
+          background: url(../images/down_icon.png);
+        }
+      }
+      .headerTool{
+        position: absolute;
+        display: none;
+        top: 42px;
+        right: 10px;
+        clear: both;
+        width: 100px;
+        background: #fff;
+        box-shadow: 0 0 5px #787878;
+        li{
+          padding: 5px 0;
+          width: 100%;
+          text-align: center;
+          box-sizing: border-box;
+          a{
+            display: inline-block;
+            width: 100%;
+            color:#666;
+          }
+          &:after{
+            position: absolute;
+            content: '';
+            display: block;
+            right:39px;
+            top:-14px;
+            border: 7px solid transparent;
+            border-bottom-color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+
+footer{
+  position: fixed;
+  bottom:0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background: #243b64;
+
+  p{
+    height: 50px;
+    line-height: 50px;
+    color:#8591a8;
+    font-size: 12px;
+    text-align: center;
+  }
+}
+
+
+/*二级页面整体布局*/
+.leftSide{
+  position: relative;
+  width:190px;
+  float: left;
+  background: #fff;
+  height: 100%;
+
+  .show-hide{
+    position: absolute;
+    z-index: 10000;
+    right: -10px;
+    top:50%;
+    margin-top: -62px;
+    width: 10px;
+    height: 124px;
+    background: url(../images/hide_icon.png);
+    font-size: 0;
+    cursor: pointer;
+  }
+
+  .show-hide2{
+    .show-hide;
+    background: url(../images/show_icon.png);
+  }
+
+  a{
+    float: left;
+    width: 100%;
+    padding-left: 2px;
+    border-left: 0;
+    box-sizing: border-box;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    color: #333333;
+    text-align: center;
+
+    &.active{
+      background: #f7fafe;
+      border-left: 2px #197df4 solid;
+      padding-left: 0;
+    }
+  }
+}
+.rightSide{
+  margin-top: 10px;
+  width: 100%;
+  padding-left: 200px;
+  box-sizing: border-box;
+  height: 100%;
+
+  .app{
+    background: #fff;
+    width: 100%;
+    margin-bottom: 88px;
+  }
+}
+
+/*遮罩*/
+.overlay{
+  display: none;
+  position: fixed;
+  z-index: 10002;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.5;
+}
+.markWarp{
+  display: none;
+  position: fixed;
+  z-index: 10003;
+  top:50%;
+  left: 50%;
+  margin: -100px 0 0 -258px;
+  width: 516px;
+  height: 200px;
+  background: #fff;
+  &.markAddAct{
+    height: 320px;
+    margin: -160px 0 0 -258px;
+  }
+  &.markActDetail{
+    height: 400px;
+    margin: -200px 0 0 -258px;
+  }
+  &.markDown{
+    height: 230px;
+    margin: -115px 0 0 -258px;
+    .liN{
+      margin-bottom: 2px;
+    }
+    .liNext{
+      margin-bottom: 0px;
+      padding-left: 120px;
+      height: 14px;
+      font-size: 12px;
+      color: #B40606;
+    }
+  }
+}
+/*删除弹框*/
+.markDelet{
+  display: none;
+  position: fixed;
+  z-index: 10003;
+  top:50%;
+  left: 50%;
+  margin: -75px 0 0 -300px;
+  width: 600px;
+  height: 150px;
+  background: #fff;
+  p{
+    padding: 30px 0;
+    width: 100%;
+    border-bottom: 1px solid #E7E7E7;
+    text-align: center;
+  }
+  .btnWrap{
+    margin: 19px auto 0 auto;
+    width: 190px;
+    input{
+      width: 80px;
+      height: 30px;
+      border: 0;
+      border-radius: 3px;
+      color:#252525;
+      cursor: pointer;
+
+      &:nth-child(1){
+        float: left;;
+      }
+      &:nth-child(2){
+        float: right;
+        color: #fff;
+        background: #1078f5;
+        &:hover{
+          background: #0a5fc5;
+        }
+      }
+    }
+  }
+}

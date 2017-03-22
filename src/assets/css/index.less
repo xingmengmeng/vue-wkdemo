@@ -1,0 +1,226 @@
+.chartsWrap{
+  .mainLeft{
+    float: left;
+    padding: 0 0 20px 0;
+    .echarts-wraper{
+      margin:10px 10px 0 10px;
+      background: #fff;
+    }
+    .echarts-wraper:hover{
+      border: 1px #7eb5f7 solid;
+      box-sizing: border-box;
+    }
+    .div-title{
+      h5{
+        padding-left: 40px;
+        height: 40px;
+        line-height: 40px;
+        border-bottom: 1px #f0f7ff solid;
+        font-size: 16px;
+        color: #333333;
+        font-weight: normal;
+        background: url(../images/icon1.png) 10px center no-repeat;
+
+        &.ic2{
+          background: url(../images/icon2.png) 10px center no-repeat;
+        }
+        &.ic3{
+          background: url(../images/icon3.png) 10px center no-repeat;
+        }
+        &.ic4{
+          background: url(../images/icon4.png) 10px center no-repeat;
+        }
+        &.ic5{
+          background: url(../images/icon5.png) 10px center no-repeat;
+        }
+        &.ic6{
+          background: url(../images/icon6.png) 10px center no-repeat;
+        }
+      }
+
+    }
+
+    &.factory{
+      .hWrap{
+        margin: 20px 10px;
+        text-align: center;
+        background: url(../images/bg_ls.png) repeat-x center;
+        h4{
+          margin: 0 auto;
+          width: 80px;
+          height: 28px;
+          line-height: 28px;
+          padding:0 15px 0 47px;
+          font-weight: normal;
+          font-size: 20px;
+          color: #333333;
+          background:#ececec url(../images/factory_icon.png) no-repeat 14px center;
+        }
+      }
+      /*轮播列表*/
+      .slideDiv{
+        position: relative;
+        width: 100%;
+        padding: 0 26px;
+        box-sizing: border-box;
+        .largWrap{
+          position: relative;
+          width: 100%;
+          height: 94px;
+          overflow: hidden;
+          .ulWrap{
+            position: absolute;
+            width: 100%;
+            padding: 0 0px;
+            box-sizing: border-box;
+            overflow: hidden;
+            ul{
+              float: left;
+              text-align: center;
+              width: 20%;
+              height: 94px;
+              /*border: 1px yellow solid;*/
+              box-sizing: border-box;
+
+              li{
+                img{
+                  margin: 10px 0 0 0;
+                }
+              }
+            }
+          }
+        }
+
+        .slideIcon{
+          position: absolute;
+          top:30px;
+          display: block;
+          width: 13px;
+          height: 20px;
+          background: url(../images/leftIcon.png);
+
+          &.leftIcon{
+            left: 10px;
+            background: url(../images/leftIcon.png);
+          }
+          &.rightIcon{
+            right: 10px;
+            background: url(../images/rightIcon.png);
+          }
+        }
+      }
+    }
+    &.mess{
+      .hWrap{
+        margin: 20px 10px;
+        text-align: center;
+        background: url(../images/bg_ls.png) repeat-x center;
+        h4{
+          margin: 0 auto;
+          width: 80px;
+          height: 28px;
+          line-height: 28px;
+          padding:0 15px 0 47px;
+          font-weight: normal;
+          font-size: 20px;
+          color: #333333;
+          background:#e6e6e6 url(../images/mess_icon.png) no-repeat 14px center;
+        }
+      }
+    }
+    &.pros{
+      .hWrap{
+        margin: 20px 10px;
+        text-align: center;
+        background: url(../images/bg_ls.png) repeat-x center;
+        h4{
+          margin: 0 auto;
+          width: 80px;
+          height: 28px;
+          line-height: 28px;
+          padding:0 15px 0 47px;
+          font-weight: normal;
+          font-size: 20px;
+          color: #333333;
+          background:#ececec url(../images/factory_icon.png) no-repeat 14px center;
+        }
+      }
+    }
+  }
+  .mainLeft:nth-child(2){
+    background: #e6e6e6;
+  }
+}
+
+#main,#mainStack,#pieControlWrap,#lineLarge,#lineDiv,#barStack{
+  height: 300px;
+  width: 100%;
+}
+#twoPie{
+  width: 230px;
+  height: 230px;
+}
+#twoPieSmall{
+  margin-top: 20px;
+  width: 180px;
+  height: 180px;
+}
+.factoryNum{
+  span{
+    padding: 0 5px;
+  }
+}
+/*推动客户统计*/
+.dataControl{
+  float: right;
+  height: 20px;
+  padding: 10px 10px 0px 0;
+}
+/*首页表格*/
+.factoryNum{
+  width: 90%;
+  margin: 10px auto;
+  height: 100px;
+  border: 1px #bbd4f5 solid;
+  border-radius: 5px;
+  li{
+    span{
+      float: left;
+      width: 33.33%;
+      padding: 0;
+      text-align: center;
+    }
+    &.titleLi span{
+      height: 42px;
+      line-height: 42px;
+      background: #d0e6ff;
+      font-size: 14px;
+      color: #333333;
+    }
+    &.dataLi span{
+      height: 54px;
+      line-height: 54px;
+    }
+  }
+}
+/*跨业务先客户资源转化统计*/
+.btnWrap{
+  padding: 10px;
+  .btn{
+    margin-left:10px;
+    padding:2px 10px;
+    color:#8e9093;
+    border: 1px #f0f6fe solid;
+    border-radius: 2px;
+    background: #f0f6fe;
+    font-size: 12px;
+    cursor: pointer;
+  }
+  .btn-active{
+    margin-left:10px;
+    border: 1px #97c4f7 solid;
+    border-radius: 2px;
+    background: #e3eefc;
+    cursor: pointer;
+  }
+}

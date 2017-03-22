@@ -1,0 +1,162 @@
+[v-cloak]{
+  display:none;
+}
+body,html{
+  width: 100%;
+  height: 100%;
+}
+input,select{
+  font-family: '微软雅黑';
+  font-size: 13px;
+}
+.loginBody{
+  background: url("../images/bg.png") center;
+  background-size: cover;
+}
+.loginContainer{
+  position: absolute;
+  left:50%;
+  top:50%;
+  margin: -300px 0 0 -600px;
+  width: 1200px;
+  height: 600px;
+  z-index: 2;
+  i{
+    float: left;
+    width: 734px;
+    height: 600px;
+    background: url("../images/ls.png")  left 20px  no-repeat;
+  }
+  .loginWrap{
+    float: right;
+    margin: 100px 80px 0 0;
+    width: 330px;
+    height: 370px;
+    position: relative;
+
+    .lsImg{
+      position: absolute;
+      z-index: 10;
+      top:0;
+      left:60px;
+    }
+    .loginUl{
+      position: absolute;
+      z-index: 9;
+      top:28px;
+      left:0;
+      width: 330px;
+      height: 350px;
+      padding:33px 30px 0;
+      background: #fff;
+      border-radius: 2px;
+      box-sizing: border-box;
+
+      li{
+        width: 100%;
+        h2{
+          padding-bottom: 6px;
+          font-size: 16px;
+          font-weight: normal;
+          color: #252525;
+          text-align: center;
+        }
+        .txt{
+          margin-top: 20px;
+          padding: 0 10px;
+          width: 100%;
+          height: 40px;
+          line-height: 40px;
+          border: 1px solid #DADADA;
+          box-sizing: border-box;
+          font-size: 14px;
+          color: #666;
+        }
+        &.remLi{
+          position: relative;
+          margin-top: 10px;
+          height: 14px;
+          line-height: 14px;
+          color: #333333;
+          #rememberPass{
+            position: absolute;
+            left:0;
+            top:0;
+            width: 100%;
+            opacity: 0;
+          }
+          .selectIcon{
+            float: left;
+            width: 14px;
+            height: 14px;
+            background: url("../images/ls_7.png");
+          }
+          .noSelectIcon{
+            .selectIcon;
+            background: url("../images/ls_8.png");
+          }
+          label{
+            margin-left: 10px;
+          }
+        }
+        &.redF{
+          padding-top: 6px;
+          height: 14px;
+          color:#B40606;
+          font-size: 12px;
+        }
+        #loginBtn{
+          margin-top: 30px;
+          width: 100%;
+          height: 40px;
+          background: #1078F5;
+          border: 0;
+          border-radius: 2px;
+          font-size: 18px;
+          color: #FFFFFF;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+.footer{
+  position: absolute;
+  bottom:20px;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-size: 12px;
+  background: none;
+}
+
+.flowImg{
+  position: absolute;
+  z-index: 1;
+  &.img1{
+    top:33%;
+    left: 10%;
+    -webkit-animation:bounceInLeft 2s forwards,rotate360 3s linear 1s infinite forwards;
+  }
+  &.img2{
+    top:4%;
+    right: 40%;
+    -webkit-animation: flipInY 2s 0s both,pulse 3s 2s infinite;
+  }
+  &.img3{
+    top:40%;
+    right: 7%;
+    -webkit-animation: bounceInRight 1s 2s forwards,rotate360 4s linear 1s infinite forwards;
+  }
+  &.img4{
+    bottom:10%;
+    left: 20%;
+    -webkit-animation: bounceInLeft 2s forwards,rotate360 15s linear 1s infinite forwards;
+  }
+  &.img5{
+    bottom:8%;
+    right: 35%;
+    -webkit-animation: flipInY 2s 0s both,pulse 5s 3s infinite;
+  }
+}

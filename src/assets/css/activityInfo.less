@@ -1,0 +1,255 @@
+[v-cloak]{
+  display:none;
+}
+body{
+  font-family: '微软雅黑';
+  background: #ececec;
+  font-size: 14px;
+  color:#333;
+}
+input,select{
+  font-family: '微软雅黑';
+  font-size: 13px;
+}
+.actInfo .container{
+  width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 0;
+}
+.left{
+  float: left;
+}
+.right{
+  float: right;
+}
+.clearfix:after{
+  content: '';
+  clear: both;
+  display: block;
+}
+
+
+header{
+  position: relative;
+  z-index: 99;
+  height: 50px;
+  background: #1078F5;
+  color:#fff;
+
+  .logo{
+    width: 80px;
+    height: 21px;
+    background: url(../images/logo.png) no-repeat;
+    font-size: 0;
+    margin-top: 15px;
+  }
+  .logoF{
+    float: left;
+    margin: 12px 0 0 15px;
+    font-size: 20px;
+    color: #FFFFFF;
+  }
+}
+/*表格头部*/
+.actHeader{
+  padding: 15px 0;
+  font-size: 16px;
+  color: #333333;
+  span{
+    padding-right: 70px;
+    &:last-of-type{
+      padding-right: 0;
+    }
+  }
+}
+.tabWrap{
+  padding: 20px;
+  background: #fff;
+}
+.acttable{
+  border: 1px #BBDBFF solid;
+  th{
+    height: 40px;
+    font-size: 14px;
+    color: #333333;
+    background: #D0E6FF;
+    font-weight: normal;
+    border: 1px #BBDBFF solid;
+  }
+  tbody{
+    tr{
+      cursor: pointer;
+      &:nth-child(2n){
+        td{
+          background: #F7FAFE;
+        }
+      }
+      td{
+        height: 40px;
+        font-size: 14px;
+        color:#333;
+        text-align: center;
+        border-left: 1px #BBDBFF solid;
+        border-right: 1px #BBDBFF solid;
+
+        .listDetailLink{
+          display: none;
+          float: left;
+          margin: 0 10px;
+          width: 14px;
+          height: 15px;
+          background: url("../images/tool_detail.png");
+          font-size: 0;
+          &:hover{
+            background: url("../images/tool_detail_hover.png");
+          }
+        }
+        .listDeleteBtn{
+          .listDetailLink;
+          width: 13px;
+          background: url("../images/tool_delete.png");
+          &:hover{
+            background: url("../images/tool_delete_hover.png");
+          }
+        }
+
+        .showDetailLink{
+          color: #333;
+          &:hover{
+            text-decoration: underline;
+          }
+        }
+      }
+      &:hover{
+        td{
+          background: #e6e6e6;
+          .listDetailLink{
+            display: block;
+          }
+          .listDeleteBtn{
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
+.tabFoot{
+  padding-top: 10px;
+  .leftS{
+    float: left;
+    width: 844px;
+    font-size: 13px;
+    .leftSpanWrap{
+      margin-left: 15px;
+      float: left;
+    }
+  }
+  .rightPage{
+    .page{
+      float: left;
+      width: 150px;
+      #prev{
+        float: left;
+        margin-right: 5px;
+        width: 30px;
+        height: 30px;
+        background: url(../images/prev_page.png);
+        font-size: 0;
+        cursor: pointer;
+        &:hover{
+          background: url(../images/prev_page_hover.png);
+        }
+      }
+      #next{
+        #prev;
+        background: url(../images/next_page.png);
+        &:hover{
+          background: url(../images/next_page_hover.png);
+        }
+      }
+      .goTo{
+        float: left;
+        margin-right: 5px;
+        width: 30px;
+        height: 30px;
+        border: 1px solid #DEECFC;
+        text-align: center;
+        box-sizing: border-box;
+      }
+      .allPage{
+        float: left;
+        margin-right: 10px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 14px;
+        color: #333;
+      }
+    }
+    .downLink{
+      display: inline-block;
+      width: 45px;
+      height: 30px;
+      line-height: 30px;
+      text-align: center;
+      color:#333;
+      background: #bad8fc;
+    }
+  }
+}
+.chartDiv{
+  padding-bottom: 10px;
+  .leftWrap{
+    margin-top: 10px;
+    float: left;
+    width: 595px;
+    height: 375px;
+    background: #fff;
+  }
+  .rightWrap{
+    .leftWrap;
+    float: right;
+  }
+  h5{
+    padding-left: 10px;
+    height: 40px;
+    line-height: 40px;
+    width: 100%;
+    font-weight: normal;
+    background: #F7FAFE;
+    border-bottom: 1px solid #DDEDFF;
+    box-sizing: border-box;
+  }
+  .chartWrap{
+    padding-top: 10px;
+    height: 325px;
+  }
+  .leftBtnWrap{
+    float: left;
+    padding-left: 37px;
+    .selectBtn{
+      width: 66px;
+      height: 26px;
+      line-height: 26px;
+      background: #F7FAFE;
+      font-size: 14px;
+      border: 1px solid #83B9F5;
+      cursor: pointer;
+    }
+    .noSelectBtn{
+      .selectBtn;
+      background: #F7FAFE;
+      border: 0;
+    }
+  }
+  .dataControl{
+    float: right;
+    margin-right: 15px;
+  }
+}
+#ch1,#ch2,#ch3,#ch4,#ch5,#ch6{
+  float: left;
+  width: 100%;
+  height: 300px;
+}
