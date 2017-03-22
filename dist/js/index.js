@@ -66,6 +66,10 @@
 
 	var _indexMain2 = _interopRequireDefault(_indexMain);
 
+	var _addUserGroup = __webpack_require__(37);
+
+	var _addUserGroup2 = _interopRequireDefault(_addUserGroup);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	_vue2.default.use(_vueResource2.default);
@@ -74,7 +78,7 @@
 	var router = new _vueRouter2.default({
 	    mode: 'history',
 	    // base: baseUrl,
-	    routes: [{ path: '/', component: _indexMain2.default }, { path: '/index', component: _indexMain2.default }]
+	    routes: [{ path: '/', component: _indexMain2.default }, { path: '/index', component: _indexMain2.default }, { path: '/addUserGroup', component: _addUserGroup2.default }]
 	});
 
 	new _vue2.default({
@@ -13840,7 +13844,7 @@
 
 
 	// module
-	exports.push([module.id, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+	exports.push([module.id, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 	// exports
 
@@ -13861,6 +13865,7 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+	//
 	//
 	//
 	//
@@ -14533,14 +14538,18 @@
 	    on: {
 	      "click": _vm.logoutFn
 	    }
-	  }, [_vm._v("注销")])])])])]), _vm._v(" "), _vm._m(0)])
-	},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('div', {
+	  }, [_vm._v("注销")])])])])]), _vm._v(" "), _c('div', {
 	    staticClass: "nav"
-	  }, [_c('a', {
-	    staticClass: "active"
-	  }, [_vm._v("首页")])])
-	}]}
+	  }, [_c('router-link', {
+	    attrs: {
+	      "to": "/index"
+	    }
+	  }, [_vm._v("首页")]), _vm._v(" "), _c('router-link', {
+	    attrs: {
+	      "to": "/addUserGroup"
+	    }
+	  }, [_vm._v("用户群")])], 1)])
+	},staticRenderFns: []}
 	module.exports.render._withStripped = true
 	if (false) {
 	  module.hot.accept()
@@ -14612,6 +14621,55 @@
 	  module.hot.accept()
 	  if (module.hot.data) {
 	     require("vue-hot-reload-api").rerender("data-v-51b6e47c", module.exports)
+	  }
+	}
+
+/***/ },
+/* 37 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var Component = __webpack_require__(12)(
+	  /* script */
+	  null,
+	  /* template */
+	  __webpack_require__(38),
+	  /* scopeId */
+	  null,
+	  /* cssModules */
+	  null
+	)
+	Component.options.__file = "d:\\2017\\vue-wkdemo\\src\\views\\addUserGroup.vue"
+	if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
+	if (Component.options.functional) {console.error("[vue-loader] addUserGroup.vue: functional components are not supported with templates, they should use render functions.")}
+
+	/* hot reload */
+	if (false) {(function () {
+	  var hotAPI = require("vue-hot-reload-api")
+	  hotAPI.install(require("vue"), false)
+	  if (!hotAPI.compatible) return
+	  module.hot.accept()
+	  if (!module.hot.data) {
+	    hotAPI.createRecord("data-v-1dbf0292", Component.options)
+	  } else {
+	    hotAPI.reload("data-v-1dbf0292", Component.options)
+	  }
+	})()}
+
+	module.exports = Component.exports
+
+
+/***/ },
+/* 38 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('div', [_vm._v("\n    增加用户群\n")])
+	},staticRenderFns: []}
+	module.exports.render._withStripped = true
+	if (false) {
+	  module.hot.accept()
+	  if (module.hot.data) {
+	     require("vue-hot-reload-api").rerender("data-v-1dbf0292", module.exports)
 	  }
 	}
 

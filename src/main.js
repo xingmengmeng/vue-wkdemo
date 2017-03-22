@@ -8,13 +8,16 @@ Vue.use(VueRouter);
 import App from './views/app.vue'
 
 import Index from './views/indexMain.vue'
+import addUserGroup from './views/addUserGroup.vue'
+
 
 const router = new VueRouter({
     mode: 'history',
     // base: baseUrl,
     routes: [
         { path: '/', component: Index},
-        { path: '/index', component: Index}
+        { path: '/index', component: Index},
+        { path: '/addUserGroup', component: addUserGroup},
     ]
 })
 

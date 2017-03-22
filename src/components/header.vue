@@ -16,7 +16,8 @@
         </div>
         <div class="nav">
             <!--<a v-for="menu in menuData" :href="'.'+menu.href" :class="urlData==menu.href?'active':''">{{menu.name}}</a>-->
-            <a class="active">首页</a>
+            <router-link to="/index">首页</router-link>
+            <router-link to="/addUserGroup">用户群</router-link>
         </div>
     </header>
 </template>
