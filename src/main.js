@@ -8,7 +8,7 @@ Vue.use(VueRouter);
 import App from './views/app.vue'
 
 import Index from './views/indexMain.vue'
-import addUserGroup from './views/addUserGroup.vue'
+
 
 
 const router = new VueRouter({
@@ -20,7 +20,7 @@ const router = new VueRouter({
     routes: [
         { path: '/', component: Index},
         { path: '/index', component: Index},
-        { path: '/addUserGroup', component: addUserGroup},
+      
     ]
 })
 

@@ -3,6 +3,7 @@ var glob = require('glob');
 var webpack = require('webpack');
 
 var HtmlWebpackPlugin = require('html-webpack-plugin');/*生成html*/
+var CleanWebpackPlugin = require('clean-webpack-plugin');
 
 var config = {
     // 这是一个主文件包括其他模块
@@ -13,7 +14,7 @@ var config = {
     output: {
         path: path.join(__dirname, 'dist'), //打包后生成的目录
         publicPath: '',	//模板、样式、脚本、图片等资源对应的server上的路径
-        filename: 'js/[name].js',	//根据对应入口名称，生成对应js名称
+        filename: 'js/[name].[hash:6].js',	//根据对应入口名称，生成对应js名称
         chunkFilename: 'js/[id].chunk.js'   //chunk生成的配置
     },
     resolve: {
@@ -22,7 +23,6 @@ var config = {
             'vue$':'vue/dist/vue.js'
         }
     },
-    devtool: "inline-source-map",/*开启错误提示  生产环境不使用此处配置*/
     module: {
         // 一些特定的编译规则
         loaders: [
@@ -46,7 +46,15 @@ var config = {
             },
         ]
     },
-    plugins: [],
+    plugins: [
+        new CleanWebpackPlugin(['dist']),// 清空dist文件夹
+        new webpack.optimize.UglifyJsPlugin({
+            comments: false,        //去掉注释
+            compress: {
+                warnings: false    //忽略警告,要不然会有一大堆的黄色字体出现……
+            }
+        }),
+    ],
 }
 module.exports = config;
 
