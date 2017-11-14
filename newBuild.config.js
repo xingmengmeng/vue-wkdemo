@@ -54,6 +54,11 @@ var config = {
                 warnings: false    //忽略警告,要不然会有一大堆的黄色字体出现……
             }
         }),
+        new webpack.DefinePlugin({
+            'process.env': {
+                NODE_ENV: JSON.stringify("production"),
+            },
+        })
     ],
 }
 module.exports = config;

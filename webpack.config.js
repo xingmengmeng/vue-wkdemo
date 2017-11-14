@@ -11,7 +11,7 @@ var config = {
     },
     // 编译的文件路径
     output: {
-        path: path.join(__dirname, 'dist'), //打包后生成的目录
+        path: path.join(__dirname, 'dev'), //打包后生成的目录
         publicPath: '',	//模板、样式、脚本、图片等资源对应的server上的路径
         filename: 'js/[name].js',	//根据对应入口名称，生成对应js名称
         chunkFilename: 'js/[id].chunk.js'   //chunk生成的配置
